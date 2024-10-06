@@ -1,0 +1,24 @@
+.todo{
+    background-image: url('../../assets/todo_bg.jpg');
+    background-size: cover;
+}
+
+label{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.username svg{
+    color: rgb(204, 8, 8);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 3px;
+}
+.username h4{
+    letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

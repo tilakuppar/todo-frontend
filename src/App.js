@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Signup from './Components/Signup/Signup';
+import SignIn from './Components/SignIn/SignIn';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ToDoItem from './Components/ToDoItem/ToDoItem';
+import ToDo from './Components/ToDo/ToDo';
 
 function App() {
+
+  const [username, setUsername] = useState('tilli');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path='/signup' element={<Signup setUsername={setUsername} />} />
+          <Route exact path='/signin' element={<SignIn />} />
+          <Route exact path='/todoitem' element={<ToDoItem />} />
+          <Route exact path='/todo' element={<ToDo username={username} />} />
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 

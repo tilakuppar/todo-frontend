@@ -1,0 +1,22 @@
+.signup{
+    background: linear-gradient(to right, #aa05aa, #ff0291);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.signup label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.signup>div{
+    box-shadow: 0px 0px 25px #fffefe;
+}
+small{
+    font-family: monospace;
+}
